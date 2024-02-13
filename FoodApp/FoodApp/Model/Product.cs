@@ -9,6 +9,7 @@
         public string ImageUri { get; set; }
         public double Price { get; set; }
         public bool IsPopular { get; set; }
-        
+        public ICollection<OrderDetail> OrderDetails { get; set; }
+        public ICollection<Cart> cartItems { get; set; }
     }
 }
